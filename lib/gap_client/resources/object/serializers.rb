@@ -1,4 +1,6 @@
 require 'logger'
+require 'jsonapi'
+
 module GapClient
   module Resources
     class Object
