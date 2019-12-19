@@ -16,9 +16,12 @@ module GapClient
     REQUESTS = [:get, :post, :put, :patch, :delete]
     HEADERS = {'Accept' => 'application/vnd.api+json', 'Content-Type' => 'application/vnd.api+json'}
 
-    def initialize(api_key = GapClient.api_key, url = GapClient.url)
+    attr_accessor :auth_strategy
+
+    def initialize(api_key = GapClient.api_key, url = GapClient.url, options = {})
       @api_key = api_key
       @url = url
+      @auth_strategy = options.try(:[], :auth_strategy) || :query_string
 
       # Setup HTTP request connection to Science Exchange.
       @connection ||= Faraday.new do |builder|
@@ -42,10 +45,16 @@ module GapClient
       msg = "Unsupported method #{method.inspect}. Only :get, :post, :put, :patch, :delete are allowed"
       raise ArgumentError, msg unless REQUESTS.include?(method)
 
+      accept = headers.present? ? headers['Accept'] : nil
+
+      if @auth_strategy == :query_string
+        params = params.reverse_merge(access_token: @api_key)
+      else
+        headers['Authorization'] = "Bearer #{@api_key}"
+      end
+
       request_url = UrlHelper.build_url(path: "#{@url}#{path}", params: params)
       payload = nil
-      accept = headers.present? ? headers['Accept'] : nil
-      headers['Authorization'] = "Bearer #{@api_key}"
 
       if body.present?
         if accept.present? && accept == 'application/vnd.api+json'
@@ -54,6 +63,7 @@ module GapClient
           payload = body
         end
       end
+
       response = @connection.run_request(method, request_url, payload, headers)
 
       case response.status.to_i
