@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="219a5449-2091-4ef8-b613-681147bf670d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1VBiGrEZO3R6WBoAZD0gKc3fcBI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/gap_client" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/gap_client" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="219a5449-2091-4ef8-b613-681147bf670d" name="Default Changelist" comment="" />
+      <created>1576732795180</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576732795180</updated>
+      <workItem from="1576732797267" duration="1823000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1638" height="280" key="GridCell.Tab.0.bottom" timestamp="1576735135059">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="280" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1576735135059" />
+    <state width="1638" height="280" key="GridCell.Tab.0.center" timestamp="1576735135058">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="280" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1576735135058" />
+    <state width="1638" height="280" key="GridCell.Tab.0.left" timestamp="1576735135057">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="280" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1576735135057" />
+    <state width="1638" height="280" key="GridCell.Tab.0.right" timestamp="1576735135058">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="280" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1576735135058" />
+    <state x="421" y="266" width="837" height="540" key="find.popup" timestamp="1576734437466">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="421" y="266" width="837" height="540" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1576734437466" />
+  </component>
+</project>
