@@ -14,14 +14,16 @@ RSpec.configure do |config|
   end
 end
 
-TEST_API_TOKEN = "".freeze
-
 VCR.configure do |config|
   config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
   config.hook_into :faraday
 end
 
-#QualtricsAPI.configure do |config|
-#  config.api_token = TEST_API_TOKEN
-#end
+# GAP client instance used in testing.
+# SET THE GAP_API_KEY ENV VAR TO THE GAP API KEY OBTAINED FROM YOUR ACCOUNT.
+# https://gap.scienceexchange.com/account
+
+GapClient.api_key = ENV['GAP_API_KEY']
+GapClient.url = ENV['GAP_HOST'] || 'https://gap.scienceexchange.com/'
+GAP_CLIENT = GapClient.client
 
