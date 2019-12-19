@@ -4,6 +4,7 @@ PATH
     gap_client (0.1.0)
       activesupport
       faraday
+      jsonapi (~> 0.1.1.beta6)
 
 GEM
   remote: https://rubygems.org/
@@ -19,6 +20,11 @@ GEM
       multipart-post (>= 1.2, < 3)
     i18n (1.7.0)
       concurrent-ruby (~> 1.0)
+    jsonapi (0.1.1.beta6)
+      jsonapi-parser (= 0.1.1.beta3)
+      jsonapi-renderer (= 0.1.1.beta1)
+    jsonapi-parser (0.1.1.beta3)
+    jsonapi-renderer (0.1.1.beta1)
     minitest (5.13.0)
     multipart-post (2.1.1)
     rake (10.5.0)

@@ -5,8 +5,8 @@ RSpec.describe 'GapClient::DSL::Attachments' do
     it 'gets attachments' do
       VCR.use_cassette('get_attachments') do
         quote_response = GAP_CLIENT.get_attachments
-        expect(quote_response).to be_a(Array)
-        expect(quote_response).first to_be(GapClient::Resources::Attachment)
+        expect(quote_response.data).to be_a(Array)
+        expect(quote_response.data.first).to be_a(GapClient::Resources::Attachment)
       end
     end
   end
