@@ -9,4 +9,4 @@
 /.idea/
 # rspec failure tracking
 .rspec_status
-!/spec/fixtures/vcr_cassettes/
+/spec/fixtures/vcr_cassettes/
