@@ -4,7 +4,7 @@ RSpec.describe 'GapClient::DSL::Words' do
   describe '#get_word' do
     it 'gets a word' do
       VCR.use_cassette('get_word') do
-        quote_response = GAP_CLIENT.get_word(id: 189)
+        quote_response = GAP_CLIENT.get_word(id: 577)
         expect(quote_response).to be_a(GapClient::Resources::Word)
       end
     end

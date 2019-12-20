@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 RSpec.describe 'GapClient::DSL::Forms' do
-  describe '#get_form' do
+  describe '#get_form', :skip do
     it 'gets a form' do
       VCR.use_cassette('get_form') do
         quote_response = GAP_CLIENT.get_form(id: 189)

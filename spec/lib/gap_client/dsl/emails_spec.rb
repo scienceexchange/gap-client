@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 RSpec.describe 'GapClient::DSL::Emails' do
-  describe '#get_email' do
+  describe '#get_email', :skip do
     it 'gets an email' do
       VCR.use_cassette('get_email') do
         quote_response = GAP_CLIENT.get_email(id: 189)

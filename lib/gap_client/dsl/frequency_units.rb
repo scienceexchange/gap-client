@@ -6,7 +6,7 @@ module GapClient
     # Get frequency units.
     # @param [Hash] params Parameters for the API end point (optional).
     # @return [Array, nil].
-    def get_frequency_unitss(params: {})
+    def get_frequency_units(params: {})
       ::GapClient::Resources::FrequencyUnit.parse(request(:get, 'api/v1/frequency_units/', params))
     end
 

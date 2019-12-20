@@ -4,7 +4,7 @@ RSpec.describe 'GapClient::DSL::Cells' do
   describe '#get_cell' do
     it 'gets a cell' do
       VCR.use_cassette('get_cell') do
-        quote_response = GAP_CLIENT.get_cell(id: 189)
+        quote_response = GAP_CLIENT.get_cell(id: 177)
         expect(quote_response).to be_a(GapClient::Resources::Cell)
       end
     end

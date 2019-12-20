@@ -4,7 +4,7 @@ RSpec.describe 'GapClient::DSL::FrequencyUnits' do
   describe '#get_frequency_unit' do
     it 'gets a frequency unit' do
       VCR.use_cassette('get_frequency_unit') do
-        quote_response = GAP_CLIENT.get_frequency_unit(id: 189)
+        quote_response = GAP_CLIENT.get_frequency_unit(id: 1)
         expect(quote_response).to be_a(GapClient::Resources::FrequencyUnit)
       end
     end
