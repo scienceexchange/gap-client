@@ -17,6 +17,7 @@ end
 VCR.configure do |config|
   config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
   config.hook_into :faraday
+  config.default_cassette_options = { decode_compressed_response: true }
 end
 
 # GAP client instance used in testing.
