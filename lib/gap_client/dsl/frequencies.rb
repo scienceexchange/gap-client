@@ -15,7 +15,7 @@ module GapClient
     # @param [String] id A frequency's ID.
     # @raise [ArgumentError] If the method arguments are blank.
     # @return [GapClient::Resources::Frequency, nil].
-    def get_frequencies(id:)
+    def get_frequency(id:)
       raise ArgumentError, 'ID cannot be blank' if id.blank?
       ::GapClient::Resources::Frequency.parse(request(:get, "api/v1/frequencies/#{id}"))
     end

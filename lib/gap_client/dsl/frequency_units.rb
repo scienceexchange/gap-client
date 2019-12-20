@@ -15,7 +15,7 @@ module GapClient
     # @param [String] id A frequency units ID.
     # @raise [ArgumentError] If the method arguments are blank.
     # @return [GapClient::Resources::FrequencyUnit, nil].
-    def get_frequency_units(id:)
+    def get_frequency_unit(id:)
       raise ArgumentError, 'ID cannot be blank' if id.blank?
       ::GapClient::Resources::FrequencyUnit.parse(request(:get, "api/v1/frequency_units/#{id}"))
     end
