@@ -12,12 +12,22 @@ module GapClient
 
     # GET /Attachment/{id}
     # Get a attachment.
-    # @param [String] id A attachment's ID.
+    # @param [String] id An attachment's ID.
     # @raise [ArgumentError] If the method arguments are blank.
     # @return [GapClient::Resources::Attachment, nil].
     def get_attachment(id:)
       raise ArgumentError, 'ID cannot be blank' if id.blank?
       ::GapClient::Resources::Attachment.parse(request(:get, "api/v1/attachments/#{id}"))
+    end
+
+    # GET /Attachment/{id}/Email
+    # Get an attachments email.
+    # @param [String] id An attachment's ID.
+    # @raise [ArgumentError] If the method arguments are blank.
+    # @return [GapClient::Resources::Email, nil].
+    def get_attachment_email(id:)
+      raise ArgumentError, 'ID cannot be blank' if id.blank?
+      ::GapClient::Resources::Email.parse(request(:get, "api/v1/attachments/#{id}/email"))
     end
   end
 end

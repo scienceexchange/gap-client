@@ -4,8 +4,8 @@ RSpec.describe 'GapClient::DSL::Frequencies' do
   describe '#get_frequency' do
     it 'gets a frequency' do
       VCR.use_cassette('get_frequency') do
-        quote_response = GAP_CLIENT.get_frequency(id: 1)
-        expect(quote_response).to be_a(GapClient::Resources::Frequency)
+        response = GAP_CLIENT.get_frequency(id: 1)
+        expect(response).to be_a(GapClient::Resources::Frequency)
       end
     end
   end
@@ -13,9 +13,9 @@ RSpec.describe 'GapClient::DSL::Frequencies' do
   describe '#get_frequencies' do
     it 'gets frequencies' do
       VCR.use_cassette('get_frequencies') do
-        quote_response = GAP_CLIENT.get_frequencies
-        expect(quote_response.data).to be_a(Array)
-        expect(quote_response.data.first).to be_a(GapClient::Resources::Frequency)
+        response = GAP_CLIENT.get_frequencies
+        expect(response.data).to be_a(Array)
+        expect(response.data.first).to be_a(GapClient::Resources::Frequency)
       end
     end
   end
