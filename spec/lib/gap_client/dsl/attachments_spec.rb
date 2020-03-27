@@ -21,9 +21,11 @@ RSpec.describe 'GapClient::DSL::Attachments' do
   end
 
   describe '#get_attachment_email' do
-    VCR.use_cassette('get_attachment_email') do
-      response = GAP_CLIENT.get_attachment_email(id: 189)
-      expect(response).to be_a(GapClient::Resources::Email)
+    it 'gets an attachments email' do
+      VCR.use_cassette('get_attachment_email') do
+        response = GAP_CLIENT.get_attachment_email(id: 189)
+        expect(response).to be_a(GapClient::Resources::Email)
+      end
     end
   end
 end
