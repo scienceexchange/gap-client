@@ -4,7 +4,7 @@ RSpec.describe 'GapClient::DSL::Runs' do
   describe '#get_run' do
     it 'gets a run' do
       VCR.use_cassette('get_run') do
-        response = GAP_CLIENT.get_run(id: 119)
+        response = GAP_CLIENT.get_run(id: 184)
         expect(response).to be_a(GapClient::Resources::Run)
       end
     end

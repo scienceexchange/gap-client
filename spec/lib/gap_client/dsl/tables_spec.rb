@@ -19,4 +19,14 @@ RSpec.describe 'GapClient::DSL::Tables' do
       end
     end
   end
+
+  describe '#get_table_cells' do
+    it 'gets a tables cells' do
+      VCR.use_cassette('get_table_cells') do
+        response = GAP_CLIENT.get_table_cells(id: 6)
+        expect(response.data).to be_a(Array)
+        expect(response.data.first).to be_a(GapClient::Resources::Cell)
+      end
+    end
+  end
 end
