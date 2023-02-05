@@ -102,7 +102,12 @@ module GapClient
 
             if rels.present?
               rels.keys.each do |k|
-                id = rels[k].try(:[], 'data').try(:[], 'id')
+                data = rels[k].dig('data')
+                # TODO: This is a temporary workaround after JSON API Resource changes.
+                # Arrays should be handled.
+                next if data.is_a? Array
+
+                id = rels[k].dig('data').dig('id')
                 attrs["#{k}_id"] = id if id
               end
             end

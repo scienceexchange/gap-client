@@ -4,7 +4,7 @@ RSpec.describe 'GapClient::DSL::Users' do
   describe '#get_user' do
     it 'gets a user' do
       VCR.use_cassette('get_user') do
-        response = GAP_CLIENT.get_user(id: 6)
+        response = GAP_CLIENT.get_user(id: 7)
         expect(response).to be_a(GapClient::Resources::User)
       end
     end
