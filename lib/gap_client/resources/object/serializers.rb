@@ -107,7 +107,7 @@ module GapClient
                 # Arrays should be handled.
                 next if data.is_a? Array
 
-                id = rels[k].dig('data').dig('id')
+                id = rels[k].try(:[], 'data').try(:[], 'id')
                 attrs["#{k}_id"] = id if id
               end
             end
