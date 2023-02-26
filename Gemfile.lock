@@ -45,7 +45,7 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
-    vcr (3.0.3)
+    vcr (6.1.0)
     zeitwerk (2.3.0)
 
 PLATFORMS
